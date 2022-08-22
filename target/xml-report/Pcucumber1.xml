@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="124.495">
+    <testcase classname="US101_amazon_search" name="TC01_Amazon Search Test" time="99.524">
+        <system-out>
+            <![CDATA[Given kullanici amazon sayfasına gider......................................passed
+And iphone icin arama yapar.................................................passed
+Then sonuclarin iphone icerdiğini test eder.................................passed
+Given kullanici amazon sayfasına gider......................................passed
+And teapot icin arama yapar.................................................passed
+Then sonuclarin tea pot icerdiğini test eder................................passed
+Given kullanici amazon sayfasına gider......................................passed
+And flower icin arama  yapar................................................passed
+Then sonuclarin  flower icerdigini  test eder...............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Parametreli stepdefination olusturma" name="TC04_parametre kullanımı" time="23.49">
+        <failure message="" type="java.lang.AssertionError">
+            <![CDATA[Given kullanici amazon sayfasına gider......................................passed
+And "macbook" icin arama yapar..............................................passed
+Then sonuclarin "windows" icerdiğini test eder..............................failed
+And sayfayi kapatir.........................................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.AmazonStepDefinations.sonuclarin_icerdiğini_test_eder(AmazonStepDefinations.java:58)
+	at ✽.sonuclarin "windows" icerdiğini test eder(file:///C:/Users/Mehmet/Desktop/GuiderSoft%20Gün%20Package/com.GuiderSoftCucumber/src/test/resources/features/US103parametrekullanim.feature:6)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
