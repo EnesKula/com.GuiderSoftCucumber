@@ -77,7 +77,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumber-jvm-example</td>
         <td>1</td>
-      <td>22 Aug 2022, 20:20</td>
+      <td>22 Aug 2022, 21:57</td>
     </tr>
   </tbody>
 </table>
@@ -117,25 +117,25 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_1_1070978575.html">Parametreli stepdefination olusturma</a>
+      <a href="report-feature_1_4233429382.html">US108 Pozitif login test</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_115014894.html">@parametre</a>
-       <a href="report-tag_3605910685.html">@paralel1</a>
+       <a href="report-tag_2370651951.html">@testparalel1</a>
+       <a href="report-tag_4079217011.html">@hotel</a>
 </div>
 
 
-  <span class="lead-duration duration">18.162</span>
+  <span class="lead-duration duration">52.754</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">TC04_parametre kullan&#305;m&#305;</span>
+  <span class="name">TC11 Pozitive login</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -166,7 +166,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">stepdefinitions.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -201,36 +201,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">kullanici amazon sayfas&#305;na gider</span>
+  <span class="name">kullanici <span class="argument">&quot;HMCUrl&quot;</span> sayfasina gider</span>
 
-  <span class="lead-duration duration">11.611</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name"><span class="argument">&quot;macbook&quot;</span> icin arama yapar</span>
-
-  <span class="lead-duration duration">6.413</span>
+  <span class="lead-duration duration">35.068</span>
 
 </div>
 
@@ -253,11 +226,92 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then failed">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">sonuclarin <span class="argument">&quot;windows&quot;</span> icerdi&#287;ini test eder</span>
+  <span class="name">login linkine tiklar</span>
 
-  <span class="lead-duration duration">0.134</span>
+  <span class="lead-duration duration">1.692</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">kullanici adi olarak <span class="argument">&quot;HMCValidUsername&quot;</span> girer</span>
+
+  <span class="lead-duration duration">0.631</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">login butonuna basar</span>
+
+  <span class="lead-duration duration">0.287</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When failed">
+  <span class="keyword indention">When</span>
+  <span class="name">basarili olarak giris yaptigini test eder</span>
+
+  <span class="lead-duration duration">15.072</span>
 
 </div>
 
@@ -269,15 +323,38 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>java.lang.AssertionError</a>
+          <a>org.openqa.selenium.NoSuchElementException:</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepdefinitions.AmazonStepDefinations.sonuclarin_icerdi&#287;ini_test_eder(AmazonStepDefinations.java:58)
-	at &#10045;.sonuclarin &quot;windows&quot; icerdi&#287;ini test eder(file:///C:/Users/Mehmet/Desktop/GuiderSoft%20G&uuml;n%20Package/com.GuiderSoftCucumber/src/test/resources/features/US103parametrekullanim.feature:6)
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()='ListOfUsers']&quot;}
+  (Session info: chrome=104.0.5112.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-9ONR3K3', ip: '172.18.208.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f19da77d479b93a466c01e4f593d70a7, findElement {using=xpath, value=//span[text()='ListOfUsers']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Mehmet\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:10442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:10442/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f19da77d479b93a466c01e4f593d70a7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.isDisplayed(Unknown Source)
+	at stepdefinitions.HotelMyCampStepDefinations.basarili_olarak_giris_yaptigini_test_eder(HotelMyCampStepDefinations.java:33)
+	at &#10045;.basarili olarak giris yaptigini test eder(file:///C:/Users/Mehmet/Desktop/GuiderSoft%20G&uuml;n%20Package/com.GuiderSoftCucumber/src/test/resources/features/US108_PositiveLoginTesti.feature:10)
 </pre>
       </div>
     </div>
@@ -301,7 +378,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">sayfayi kapatir</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -346,7 +423,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">5.312</span>
+  <span class="lead-duration duration">2.502</span>
 
           </div>
 
@@ -359,13 +436,13 @@ $(document).ready(function() {
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
       <a>screenshots</a>
-      <a href="embeddings/embedding_-2072265489.png" download target="_blank">
+      <a href="embeddings/embedding_213732322.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-6" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-2072265489.png">
+        <img src="embeddings/embedding_213732322.png">
       </div>
     </div>
   </div>

@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="121.012">
-    <testcase classname="US102 Backgroun ile amazon search testi" name="TC01_Amazon İphone search Testi" time="59.256">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="42.7">
+    <testcase classname="US112 WebUniversity Window Handle" name="TC17 Reusuble Methots ile window handle" time="41.682">
         <system-out>
-            <![CDATA[Given kullanici amazon sayfasına gider......................................passed
-And iphone icin arama yapar.................................................passed
-Then sonuclarin iphone icerdiğini test eder.................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US102 Backgroun ile amazon search testi" name="TC02_Amazon tea pot Search Testi" time="28.308">
-        <system-out>
-            <![CDATA[Given kullanici amazon sayfasına gider......................................passed
-And teapot icin arama yapar.................................................passed
-Then sonuclarin tea pot icerdiğini test eder................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US102 Backgroun ile amazon search testi" name="TC03_Amazon flower Search Testi" time="32.198">
-        <system-out>
-            <![CDATA[Given kullanici amazon sayfasına gider......................................passed
-And flower icin arama  yapar................................................passed
-Then sonuclarin  flower icerdigini  test eder...............................passed
+            <![CDATA[Given kullanici "WebUniversityUrl" sayfasina gider..........................passed
+And Login Porta' a kadar asagi iner.........................................passed
+And Login Portala tiklar....................................................passed
+And Diger window'a gecin....................................................passed
+Then "Bilal" ve "SAFAK" kutularina deger yazar..............................passed
+And WebUniversity Login butonuna basar......................................passed
+And Popup'ta cikan yazinin "validation failed" oldugunu test edin...........passed
+Then Ok diyerek Popup'i kapatin.............................................passed
+And Ilk sayfaya geri donun..................................................passed
+And Ilk sayfaya donuldugunu test edin.......................................passed
+Then biraz 3 saniye bekle...................................................passed
+And sayfayi kapatir.........................................................passed
 ]]>
         </system-out>
     </testcase>
