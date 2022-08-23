@@ -1,160 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="294.501">
-    <testcase classname="US107 Senario Outline ile amazon testleri" name="TC10 amazonda bir listenin tüm elementlerini aratmak" time="86.231">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="123.036">
+    <testcase classname="US101_amazon_search" name="TC01_Amazon Search Test" time="89.449">
         <system-out>
-            <![CDATA[Given kullanici "AmazonURL" sayfasina gider.................................passed
-Then "car" icin arama yapar.................................................passed
-And sonuclarin "car" icerdiğini test eder...................................passed
-Then sayfayi kapatir........................................................passed
+            <![CDATA[Given kullanici amazon sayfasına gider......................................passed
+And iphone icin arama yapar.................................................passed
+Then sonuclarin iphone icerdiğini test eder.................................passed
+Given kullanici amazon sayfasına gider......................................passed
+And teapot icin arama yapar.................................................passed
+Then sonuclarin tea pot icerdiğini test eder................................passed
+Given kullanici amazon sayfasına gider......................................passed
+And flower icin arama  yapar................................................passed
+Then sonuclarin  flower icerdigini  test eder...............................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US107 Senario Outline ile amazon testleri" name="TC10 amazonda bir listenin tüm elementlerini aratmak 2" time="20.439">
+    <testcase classname="Parametreli stepdefination olusturma" name="TC04_parametre kullanımı" time="32.416">
         <system-out>
-            <![CDATA[Given kullanici "AmazonURL" sayfasina gider.................................passed
-Then "water" icin arama yapar...............................................passed
-And sonuclarin "water" icerdiğini test eder.................................passed
-Then sayfayi kapatir........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US107 Senario Outline ile amazon testleri" name="TC10 amazonda bir listenin tüm elementlerini aratmak 3" time="16.899">
-        <system-out>
-            <![CDATA[Given kullanici "AmazonURL" sayfasina gider.................................passed
-Then "Usb" icin arama yapar.................................................passed
-And sonuclarin "Usb" icerdiğini test eder...................................passed
-Then sayfayi kapatir........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US107 Senario Outline ile amazon testleri" name="TC10 amazonda bir listenin tüm elementlerini aratmak 4" time="22.14">
-        <system-out>
-            <![CDATA[Given kullanici "AmazonURL" sayfasina gider.................................passed
-Then "glass" icin arama yapar...............................................passed
-And sonuclarin "glass" icerdiğini test eder.................................passed
-Then sayfayi kapatir........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US107 Senario Outline ile amazon testleri" name="TC10 amazonda bir listenin tüm elementlerini aratmak 5" time="27.727">
-        <system-out>
-            <![CDATA[Given kullanici "AmazonURL" sayfasina gider.................................passed
-Then "t-shirts" icin arama yapar............................................passed
-And sonuclarin "t-shirts" icerdiğini test eder..............................passed
-Then sayfayi kapatir........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US108 Pozitif login test" name="TC11 Pozitive login" time="55.272">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()='ListOfUsers']&quot;}&#10;  (Session info: chrome=104.0.5112.82)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.4.0', revision: 'e5c75ed026a'&#10;System info: host: 'DESKTOP-9ONR3K3', ip: '172.18.208.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [f19da77d479b93a466c01e4f593d70a7, findElement {using=xpath, value=//span[text()='ListOfUsers']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Mehmet\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:10442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:10442/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: f19da77d479b93a466c01e4f593d70a7" type="org.openqa.selenium.NoSuchElementException">
-            <![CDATA[Given kullanici "HMCUrl" sayfasina gider....................................passed
-Then login linkine tiklar...................................................passed
-Then kullanici adi olarak "HMCValidUsername" girer..........................passed
-Then login butonuna basar...................................................passed
-When basarili olarak giris yaptigini test eder..............................failed
-And sayfayi kapatir.........................................................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='ListOfUsers']"}
-  (Session info: chrome=104.0.5112.82)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-9ONR3K3', ip: '172.18.208.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f19da77d479b93a466c01e4f593d70a7, findElement {using=xpath, value=//span[text()='ListOfUsers']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Mehmet\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:10442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:10442/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f19da77d479b93a466c01e4f593d70a7
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy24.isDisplayed(Unknown Source)
-	at stepdefinitions.HotelMyCampStepDefinations.basarili_olarak_giris_yaptigini_test_eder(HotelMyCampStepDefinations.java:33)
-	at ✽.basarili olarak giris yaptigini test eder(file:///C:/Users/Mehmet/Desktop/GuiderSoft%20Gün%20Package/com.GuiderSoftCucumber/src/test/resources/features/US108_PositiveLoginTesti.feature:10)
-]]>
-        </failure>
-    </testcase>
-    <testcase classname="US110 Scenario Outline ile editör database sayfasina kayit" name="TC16 kullanici yeni kayit eklemeli" time="20.837">
-        <system-out>
-            <![CDATA[When kullanici "EDB" sayfasina gider........................................passed
-Then new butonuna basar.....................................................passed
-Then firstname olarak "Alkan" girer.........................................passed
-Then Lastname olarak "Tuncer" girer.........................................passed
-Then Position olarak "DevOps" girer.........................................passed
-Then Office olarak "NC" girer...............................................passed
-Then Extension olarak "QA" girer............................................passed
-Then Start date olarak "2022-10-10" girer...................................passed
-Then Salary olarak "110000" girer...........................................passed
-And kullanıcı Create tusuna basar...........................................passed
-When kullanici "Alkan" ile arama yapar......................................passed
-And isim bolumunde "Alkan" dogrular.........................................passed
-And sayfayi kapatir.........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US110 Scenario Outline ile editör database sayfasina kayit" name="TC16 kullanici yeni kayit eklemeli 2" time="15.058">
-        <system-out>
-            <![CDATA[When kullanici "EDB" sayfasina gider........................................passed
-Then new butonuna basar.....................................................passed
-Then firstname olarak "Muhammed" girer......................................passed
-Then Lastname olarak "güney" girer..........................................passed
-Then Position olarak "Developer" girer......................................passed
-Then Office olarak "Almanya" girer..........................................passed
-Then Extension olarak "Boss" girer..........................................passed
-Then Start date olarak "2022-10-11" girer...................................passed
-Then Salary olarak "55500" girer............................................passed
-And kullanıcı Create tusuna basar...........................................passed
-When kullanici "Muhammed" ile arama yapar...................................passed
-And isim bolumunde "Muhammed" dogrular......................................passed
-And sayfayi kapatir.........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US110 Scenario Outline ile editör database sayfasina kayit" name="TC16 kullanici yeni kayit eklemeli 3" time="13.274">
-        <system-out>
-            <![CDATA[When kullanici "EDB" sayfasina gider........................................passed
-Then new butonuna basar.....................................................passed
-Then firstname olarak "Sadri" girer.........................................passed
-Then Lastname olarak "Findikli" girer.......................................passed
-Then Position olarak "Developer" girer......................................passed
-Then Office olarak "İngiltere" girer........................................passed
-Then Extension olarak "QA" girer............................................passed
-Then Start date olarak "2022-10-12" girer...................................passed
-Then Salary olarak "45000" girer............................................passed
-And kullanıcı Create tusuna basar...........................................passed
-When kullanici "Sadri" ile arama yapar......................................passed
-And isim bolumunde "Sadri" dogrular.........................................passed
-And sayfayi kapatir.........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US110 Scenario Outline ile editör database sayfasina kayit" name="TC16 kullanici yeni kayit eklemeli 4" time="15.135">
-        <system-out>
-            <![CDATA[When kullanici "EDB" sayfasina gider........................................passed
-Then new butonuna basar.....................................................passed
-Then firstname olarak "Hasan" girer.........................................passed
-Then Lastname olarak "Ozye" girer...........................................passed
-Then Position olarak "Tester" girer.........................................passed
-Then Office olarak "Dubai" girer............................................passed
-Then Extension olarak "QA" girer............................................passed
-Then Start date olarak "2022-10-15" girer...................................passed
-Then Salary olarak "150000" girer...........................................passed
-And kullanıcı Create tusuna basar...........................................passed
-When kullanici "Hasan" ile arama yapar......................................passed
-And isim bolumunde "Hasan" dogrular.........................................passed
+            <![CDATA[Given kullanici amazon sayfasına gider......................................passed
+And "macbook" icin arama yapar..............................................passed
+Then sonuclarin "macbook" icerdiğini test eder..............................passed
 And sayfayi kapatir.........................................................passed
 ]]>
         </system-out>
